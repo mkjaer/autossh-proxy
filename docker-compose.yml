@@ -1,0 +1,14 @@
+version: '2'
+services:
+
+  autossh-proxy:
+    build: .
+    image: autossh-proxy
+    volumes:
+      - ~/.ssh/:/root/.ssh/
+    ports:
+      - 58080:58080
+    environment:
+      SSH_USER: $USER 
+      SSH_HOST: remote.example.com 
+
