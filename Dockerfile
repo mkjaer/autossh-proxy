@@ -1,4 +1,4 @@
-FROM alpine:3.7 
+FROM alpine:3.8 
 
 # docker run -v ~/.ssh/:/root/.ssh/ --rm -p 8080:8080 autossh
 # Turn of monitoring
